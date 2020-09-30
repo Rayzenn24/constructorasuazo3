@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title class="titulo">Constructora Suazo</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">   
+   
+  
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+
+  
+</head>
+
+
+<body> 
+
+  <div class="row">
+      <div class="col s12">
+
+        <form class="row" action="sendmailcontact.php" method="post" name="Form_contacto" id="Form_contacto" style="padding-top: 30px;">
+            <div class="col l10 offset-l1">
+                <h6><b><u>Datos Obligatorios</u></b></h6>
+
+                <div class="row">
+
+                  <div class="input-field col s6" style="margin-top: 15px;" >
+                    <i class="large material-icons"  style="color: rgb(0, 93, 157); margin-left: -100px; margin-top: 10px;">person</i>
+                    <input id="nombre" name="nombre" type="text" required class="validate">
+                    <label for="nombre" data-error="error" data-success="correcto" style="color: black; margin-top: 10px;">Nombre</label>
+                </div> 
+        
+                <div class="input-field col s6" style="margin-top: -41px; ">
+                    <i class="large material-icons" style="color: rgb(0, 93, 157); margin-left: -20px; margin-top: 42px;">mail</i>
+                    <input style="margin-left: 75px;" id="mail" name="mail" type="email" required class="validate">
+                    <label for="mail" style="color: black; margin-top: 62px; margin-left: 15%; ">Correo</label>
+                    <span style="margin-top: -50px; margin-left: 75px;"class="helper-text" data-error="Ingrese un correo en fomrato valido" data-success="Ok"></span>
+                </div> 
+
+                </div>
+
+                <div class="row">
+
+                  <div class="input-field col s6" style="margin-top: 5px;">
+                    <i class="large material-icons"  style="color: rgb(0, 93, 157); margin-left: -100px; margin-top: 10px;">local_phone</i>
+                    <textarea id="telefono" name="telefono" required class="materialize-textarea"></textarea>
+                    <label for="telefono" data-error="campo obligatorio" data-success="Correcto" style="color: black;">Telefono</label>
+                  </div>
+          
+              <div class="input-field col s6" style="margin-top: 5px;">
+                <i class="large material-icons" style="color: rgb(0, 93, 157);margin-left: -20px;">comment</i>
+                <textarea id="comentario" name="comentario" required class="materialize-textarea"></textarea>
+                <label for="comentario" data-error="campo obligatorio" data-success="Correcto" style="color: black; margin-left: 70px;">Comentario</label>
+            </div> 
+
+                </div>
+        
+                        
+        
+               
+                
+                <button id="send" class="btn waves-effect waves-light col l2" type="submit" name="action" style="margin-top: 20px; margin-left: 20px;">Enviar
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+      </div>
+   
+
+  
+
+   
+    
+
+</div> 
+
+<script>
+
+</script>
+
+  </body>
+</html>

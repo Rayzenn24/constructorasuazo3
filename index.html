@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Constructora Suazo</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font.css" type="text/css" rel="stylesheet" media="screen,projection">  
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet"> 
+  
+  
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" >  
+
+  
+</head>
+
+<body>    
+    <div class="row">        
+          <div class="slider center col s8 offset-s2">
+            <ul class="slides">
+              <li>
+                <img src="img/0.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  
+                </div>
+              </li>
+              <li>
+                <img src="img/1.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                   </div>
+              </li>
+              <li>
+                <img src="img/2.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                 </div>|
+              </li>
+              <li>
+                <img src="img/3.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  </div>
+              </li>
+              <li>
+                <img src="img/4.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  </div>
+              </li>
+            </ul>
+          </div>
+     </div> 
+     
+
+
+     <div class="row">    
+
+        
+        
+
+        <div  class="col s8 offset-s2 center" style="background-color: rgb(0, 93,157); height: 45px; display: inline-block;  line-height: 43px;">
+
+            <div class="col s1"  ></div>
+          
+          
+            <div class="col s2"><a class="menu" href="#" id="Inicio1" style="color: white; font-weight: bold; margin-bottom: 100px;">INICIO</a></div>
+            <div class="col s2"><a class="menu" href="#" id="Nosotros" style="color: white; font-weight: bold; margin-bottom: 100px;">NOSOTROS</a></div>
+            <div class="col s2"><a class="menu" href="#" id="Proyectos" style="color: white; font-weight: bold; margin-bottom: 100px;">PROYECTOS</a></div>
+            <div class="col s2"><a class="menu" href="#" id="Galeria" style="color: white; font-weight: bold; margin-bottom: 100px;">GALERIA</a></div>
+            <div class="col s2"><a class="menu" href="#" id="Contacto" style="color: white; font-weight: bold; margin-bottom: 100px;">CONTACTO</a></div>
+            <button class="waves-effect waves-light btn modal-trigger col s12" href="#modal1" style="font-weight: bold; margin-top: 1%; width: 102%; margin-left: -1%;">Te invitamos a postular a Subsidios 2021</button>              
+          
+        </div>
+    
+
+      
+
+     </div>
+
+    <div class="row">
+
+      
+
+    <div class="contenido col s8 offset-s2" style="min-height: 450px; background-color:  rgb(215, 215,215); margin-top: 2%; ">
+     
+      <div class="col s12 l4">
+       
+              </div>
+
+        <div class="col s12 l4">            
+
+                <img class="responsive-img center" style="margin-top: 17%;" id="logo1" src="img/logo.png">           
+
+        </div>
+
+        <div class="col s12 l4">
+
+
+        </div>
+
+
+
+    </div>
+    </div>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4 class="center" style="font-family: 'Ramabhadra', sans-serif;;">Postulacion Subsidios 2021</h4>
+        <img class="responsive-img" src="img/subsidios.jpg"> 
+    
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s8 offset-s2 " style=" background-color:rgb(0, 93, 157);">
+        <ul style="height: 44px;">
+          <p style="color: white; text-align: center; line-height: 43px;"> <marquee><b>CONSTRUCTORA SUAZO LIMITADA</b> - AV. LIBERTAD N° 640, SEGUNDO PISO OF. #208 - FONO 42 2226877 - CHILLÁN </marquee> </p>        
+        </ul>          
+      </div>
+    </div>
+    
+
+
+  </div>
+
+  
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+    
+
+  <script>
+      $(document).ready(function(){
+    $('.slider').slider();
+
+    
+
+    $('#Inicio1').click(function(){
+        $(".contenido").load("inicio1.html");
+                         });
+
+    $('#Nosotros').click(function(){
+        $(".contenido").load("nosotros.html");
+            
+                         });
+
+    $('#Proyectos').click(function(){
+        $(".contenido").load("proyectos.html");            
+                         });
+
+    $('#Galeria').click(function(){
+        $(".contenido").load("galeria.html");            
+                         }); 
+
+    $('#Contacto').click(function(){
+        $(".contenido").load("contacto.html");            
+                         });                                                  
+  });
+  
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+    $('.modal').modal();  
+  });</script>
+
+  </body>
+</html>
